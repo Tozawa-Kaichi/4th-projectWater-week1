@@ -18,7 +18,9 @@ public class MyGenerics2<T> where T : MonoBehaviour // ここで「型 T は Mon
     }
 }
 
-public class MyGenerics3<T> where T : MonoBehaviour, IComparable<T> // カンマ区切りで条件を複数指定することもできるので…
+public class MyGenerics3<T,T1> 
+    where T : MonoBehaviour, IComparable<T> // カンマ区切りで条件を複数指定することもできるので…
+    where T1: StateMachineBehaviour, IComparable<T1> 
 {
     public void Test(T x, T y)
     {
