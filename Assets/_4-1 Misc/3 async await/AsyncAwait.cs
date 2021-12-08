@@ -64,7 +64,6 @@ public class AsyncAwait : MonoBehaviour
                 sw.Write(_bigString);
             }
         }
-
         // テスト用の大きいデータなので、すぐ削除する
         File.Delete(_filePath);
     }
