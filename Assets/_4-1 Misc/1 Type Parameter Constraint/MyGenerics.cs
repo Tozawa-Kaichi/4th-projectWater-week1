@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class MyGenerics1<T> where T : IComparable<T> // ここで「型 T は IComparable を実装していること」という条件を追加することで…
 {
+    //whereの先で条件を詰める
     public int Test(T x, T y)
     {
         return x.CompareTo(y);  // T 型の変数 x が CompareTo メソッドを持つと決定できる
